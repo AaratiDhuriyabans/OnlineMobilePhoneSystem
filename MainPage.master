@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainPage.master.cs" Inherits="MainPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+            <table cellpadding="0" cellspacing="0" class="style1">
+                <tr>
+                    <td valign="top" 
+                        style="font-family: Arial; font-size: medium; font-weight: bold; font-style: normal; color: #FFFFFF; background-color: #000099; border: thin solid #000000">
+                        <br />
+                        <h1 class="style2">
+                            ONLINE MOBILE PHONE SHOPPING</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-size: medium; font-weight: bold; color: #000000; background-color: #0000FF; border-style: none solid solid solid; border-width: thin; border-color: #000000" 
+                        valign="top">
+                        <asp:Menu ID="Menu1" runat="server" ForeColor="White" Orientation="Horizontal">
+                            <Items>
+                                <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/User/Product.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="REGISTER" Value="REGISTER" 
+                                    NavigateUrl="~/User/Registration.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="CONTACT US" Value="CONTACT US" 
+                                    NavigateUrl="~/Admin/ContactUs.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ABOUT US" Value="ABOUT US"></asp:MenuItem>
+                                <asp:MenuItem Text="FEEDBACK" Value="FEEDBACK" 
+                                    NavigateUrl="~/Admin/Feedback.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="LOGIN" Value="LOGIN" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticMenuItemStyle BackColor="#FF66CC" ForeColor="White" 
+                                HorizontalPadding="50px" ItemSpacing="8px" VerticalPadding="5px" />
+                            <StaticMenuStyle HorizontalPadding="80px" VerticalPadding="5px" />
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-size: medium; font-weight: bold; font-style: normal; color: #FFFFFF; background-color: #0000FF; border-style: none solid solid solid; border-width: thin; border-color: #000000" 
+                        valign="top">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style =" min-height:450px ; vertical-align:top" >
+                         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+   
+                        </div></td>
+                </tr>
+                <tr>
+                    <td style="font-family: Arial; font-size: medium; font-weight: bold; font-style: normal; font-variant: normal; color: #FFFFFF; background-color: #000080; border-style: none solid solid solid; border-width: thin; border-color: #000000" 
+                        valign="bottom" class="style2">
+                        Designed&amp;Developed By Aarati&amp;Qurret Alein</td>
+                </tr>
+            </table>
+        
+        </div>
+    </form>
+</body>
+</html>
